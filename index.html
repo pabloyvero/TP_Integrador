@@ -30,6 +30,7 @@
                         <li class="nav-item"><a class="nav-link" href="#losoradores">Los Oradores</a></li>
                         <li class="nav-item"><a class="nav-link" href="#ellugar">El lugar y la fecha</a></li>
                         <li class="nav-item"><a class="nav-link" href="#convertirse">Conviertete en orador</a></li>
+                        <li class="nav-item"><a class="nav-link" href="inscriptos.php">Ver Inscriptos</a></li>
                         <li class="nav-item"><a class="nav-link concolor" href="ticketera.html">Comprar tickets</a></li>
                     </ul>                
                 </div>
@@ -157,22 +158,22 @@
                 
                 </div>
                 <div class="col-6">
-                    <form class="row g-3">
+                    <form class="row g-3" action="inscriptos.php" method="post">
                         <div class="col-6">
-                            <input type="nombre" class="form-control" id="nombreFormControlInput1" placeholder="Nombre">
+                            <input type="text" class="form-control" id="nombreFormControlInput1" placeholder="Nombre" name="nombre">
                         </div>
                         <div class="col-6">
-                            <input type="apellido" class="form-control" id="apellidoFormControlInput1" placeholder="Apellido">
+                            <input type="text" class="form-control" id="apellidoFormControlInput1" placeholder="Apellido" name="apellido">
                         </div>
                     </form>
                     <br>    
                     <div class="mb-3">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Sobre qué quieres hablar?"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Sobre qué quieres hablar?" name="memo"></textarea>
                     </div>
                     <p style="font-size: small;">Recuerda incluir un título para tu charla</p>
-                    <div class="mb-3">
-                        <div class="row g-12">
-                            <button type="button" class="btn-lg" style="color:whitesmoke; background-color: green; border-color: green;">Enviar</button>
+                    <div class="mb-6">
+                        <div class="row g-6">
+                            <button type="button" class="btn-sm" style="color:whitesmoke; background-color: green; border-color: green;">Enviar</button>
                         </div>
                     </div>
                 </div>
